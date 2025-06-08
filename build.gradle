@@ -39,6 +39,10 @@ dependencies {
 
     // https://mvnrepository.com/artifact/org.springdoc/springdoc-openapi-starter-webmvc-ui
     implementation("org.springdoc:springdoc-openapi-starter-webmvc-ui:2.8.8")//swagger
+
+    // https://mvnrepository.com/artifact/io.github.openfeign.querydsl/querydsl-jpa
+    implementation("io.github.openfeign.querydsl:querydsl-jpa:6.11")
+    annotationProcessor("io.github.openfeign.querydsl:querydsl-apt:6.11:jakarta")//openfeign querydsl
 }
 
 tasks.named('test') {
